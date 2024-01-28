@@ -26,19 +26,11 @@ export default {
           .error('A Description requires a minimum of 3 character and a max of 500'),
     },
     {
-      name: 'isOpenToEveryone',
-      title:
-        'Are rewards open to everyone? (WARNING: Users can claim rewards without needing to own a key)',
-      type: 'boolean',
-      description:
-        'This will allow users to claim rewards without needing a key but would need to login through Discord to open the community chest',
-    },
-    {
       name: 'chestModel',
       title: 'Loot Chest 3D Model',
       type: 'string',
       description:
-        'The 3D model that will be shown during the Loot CHest experience. Only .glb models that are hosted on Google Cloud Provider are supported',
+        'The 3D model that will be shown during the Loot Chest experience. Only .glb models that are hosted on Google Cloud Provider are supported',
       validation: (Rule: any) =>
         Rule.required().uri({
           allowRelative: true,
@@ -65,10 +57,10 @@ export default {
     },
     {
       name: 'isHidden',
-      title: 'Hide Loot CHest',
+      title: 'Hide Loot Chest',
       type: 'boolean',
       description:
-        'This option allows you to hide the Loot CHest. Useful for testing, updating content, and preparing for releases. (Default is false)',
+        'This option allows you to hide the Loot Chest. Useful for testing, updating content, and preparing for releases. (Default is false)',
     },
     {
       name: 'createdBy',
