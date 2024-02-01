@@ -15,6 +15,17 @@ export default {
           .error('A Chest Name requires a minimum of 3 character and a max of 22'),
     },
     {
+      name: 'fileChestName',
+      title: 'File Chest Name',
+      type: 'string',
+      description: 'The chest file name is used to store the chest data in the database',
+      validation: (Rule: any) =>
+        Rule.required()
+          .min(3)
+          .max(22)
+          .error('A file Chest Name requires a minimum of 3 character and a max of 22'),
+    },
+    {
       name: 'chestDescription',
       title: 'Chest Description',
       type: 'string',
