@@ -60,6 +60,12 @@ export default {
       type: 'chestIcon',
     },
     {
+      name: 'rarityList',
+      title: 'Rarity Percentage List',
+      type: 'rarityList',
+      validation: (Rule: any) => Rule.required().error('A rarity list is required'),
+    },
+    {
       name: 'rewardList',
       title: 'Chest Rewards',
       type: 'array',
