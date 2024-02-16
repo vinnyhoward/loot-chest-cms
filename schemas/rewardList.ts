@@ -1,4 +1,4 @@
-export const FIELDS = [
+export const inputFields = [
   {title: 'First Name', value: 'firstName', description: "Enter the user's first name."},
   {title: 'Last Name', value: 'lastName', description: "Enter the user's last name."},
   {
@@ -20,6 +20,44 @@ export const FIELDS = [
     title: 'Crypto Wallet Address',
     value: 'cryptoWalletAddress',
     description: "The user's cryptocurrency wallet address for transactions.",
+  },
+]
+
+export const itemTierList = [
+  {
+    // 1/2 of the Overall Winning Percentage
+    title: 'Common',
+    value: 'common',
+    description:
+      'Items that are frequently found and offer basic enhancements or benefits. Takes up 50% of the Overall Winning Percentage.',
+  },
+  {
+    // 1/4 of the Overall Winning Percentage
+    title: 'Uncommon',
+    value: 'uncommon',
+    description:
+      'Slightly rare items that provide a moderate level of enhancements or unique features. Takes up 25% of the Overall Winning Percentage.',
+  },
+  {
+    // 1/8 of the Overall Winning Percentage
+    title: 'Rare',
+    value: 'rare',
+    description:
+      'Items that are hard to come by, offering significant benefits or unique aesthetics. Takes up 12.5% of the Overall Winning Percentage.',
+  },
+  {
+    // 1/16 of the Overall Winning Percentage
+    title: 'Legendary',
+    value: 'legendary',
+    description:
+      'Highly sought after items with unparalleled benefits, often with unique attributes or lore. Takes up 6.25% of the Overall Winning Percentage.',
+  },
+  {
+    // 1/32 of the Overall Winning Percentage
+    title: 'Divine',
+    value: 'divine',
+    description:
+      "The rarest items, offering divine or cosmic level benefits, often tied to the lore's deities or cosmic entities. Takes up 3.125% of the Overall Winning Percentage.",
   },
 ]
 
@@ -83,12 +121,15 @@ export default {
         'Provide a Discord link for community engagement or support related to the reward. This could be a channel or direct message link.',
     },
     {
-      name: 'winPercentage',
-      title: 'Win Percentage',
-      type: 'number',
+      name: 'itemRarity',
+      title: 'Item Rarity',
+      type: 'string',
+      options: {
+        list: itemTierList,
+      },
       description:
-        'Set the probability of winning this reward. Use a decimal between 0 (0%) and 1 (100%), e.g., 0.5 for a 50% win chance.',
-      validation: (Rule: any) => Rule.required().error('Setting a win percentage is mandatory.'),
+        'Select the rarity tier for this reward. This will determine the chance of winning the reward.',
+      validation: (Rule: any) => Rule.required().error('You must select a rarity tier.'),
     },
     {
       name: 'rewardImage',
@@ -107,7 +148,7 @@ export default {
       type: 'array',
       of: [{type: 'string'}],
       options: {
-        list: FIELDS,
+        list: inputFields,
       },
       description:
         'Select the form fields required from users to claim this reward. Ensures necessary information is collected for reward fulfillment.',

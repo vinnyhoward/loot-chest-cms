@@ -38,7 +38,7 @@ export function RarityInput(props: any) {
       <TextInput
         {...elementProps}
         onChange={handleChange}
-        value={(value * 100).toString()} // Convert back to percentage for display
+        value={(value * 100).toString()}
         type="number"
         step="0.01"
         max="100"
@@ -52,19 +52,19 @@ export function RarityInput(props: any) {
         </Card>
       )}
       <Card>
-        <Text style={{color: 'grey', marginTop: '10px'}} size={1}>
+        <Text style={{color: 'grey', marginTop: '15px'}} size={1}>
           Common chance: {tierChances.common.toFixed(2)}%
         </Text>
-        <Text style={{color: 'green', marginTop: '10px'}} size={1}>
+        <Text style={{color: 'green', marginTop: '15px'}} size={1}>
           Uncommon chance: {tierChances.uncommon.toFixed(2)}%
         </Text>
-        <Text style={{color: 'blue', marginTop: '10px'}} size={1}>
+        <Text style={{color: 'blue', marginTop: '15px'}} size={1}>
           Rare chance: {tierChances.rare.toFixed(2)}%
         </Text>
-        <Text style={{color: 'purple', marginTop: '10px'}} size={1}>
+        <Text style={{color: 'purple', marginTop: '15px'}} size={1}>
           Legendary chance: {tierChances.legendary.toFixed(2)}%
         </Text>
-        <Text style={{color: 'gold', marginTop: '10px'}} size={1}>
+        <Text style={{color: 'gold', marginTop: '15px'}} size={1}>
           Divine chance: {tierChances.divine.toFixed(2)}%
         </Text>
       </Card>
