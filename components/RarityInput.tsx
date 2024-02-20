@@ -17,7 +17,7 @@ export function RarityInput(props: any) {
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const nextValue = event.currentTarget.value
-      const decimalValue = parseFloat(nextValue) / 100 //
+      const decimalValue = parseFloat(nextValue) / 100
 
       validateValue(decimalValue * 100)
       onChange(nextValue ? set(decimalValue) : unset())
@@ -52,19 +52,19 @@ export function RarityInput(props: any) {
         </Card>
       )}
       <Card>
-        <Text style={{color: 'grey', marginTop: '15px'}} size={1}>
+        <Text style={{color: '#5E98D9', marginTop: '15px'}} size={1}>
           Common chance: {tierChances.common.toFixed(2)}%
         </Text>
-        <Text style={{color: 'green', marginTop: '15px'}} size={1}>
+        <Text style={{color: '#4B69FF', marginTop: '15px'}} size={1}>
           Uncommon chance: {tierChances.uncommon.toFixed(2)}%
         </Text>
-        <Text style={{color: 'blue', marginTop: '15px'}} size={1}>
+        <Text style={{color: '#8847FF', marginTop: '15px'}} size={1}>
           Rare chance: {tierChances.rare.toFixed(2)}%
         </Text>
-        <Text style={{color: 'purple', marginTop: '15px'}} size={1}>
+        <Text style={{color: '#D32EE6', marginTop: '15px'}} size={1}>
           Legendary chance: {tierChances.legendary.toFixed(2)}%
         </Text>
-        <Text style={{color: 'gold', marginTop: '15px'}} size={1}>
+        <Text style={{color: '#F8AE39', marginTop: '15px'}} size={1}>
           Divine chance: {tierChances.divine.toFixed(2)}%
         </Text>
       </Card>
