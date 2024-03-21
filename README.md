@@ -9,7 +9,7 @@
   </a>
 
   <p align="center">
-    A content management system for the Lootchest exerpience
+    A content management system for the Lootchest experience
     <br />
     <br />
     <a href="https://lootchest.lol/">View Site</a>
