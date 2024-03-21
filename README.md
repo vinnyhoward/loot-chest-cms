@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="hhttps://lootchest.lol/">
-    <img src="public/logos/temp_logo.png" alt="Logo" width="80%">
+    <img src="assets/logos/temp_logo.png" alt="Logo" width="80%">
   </a>
 
   <p align="center">
@@ -43,7 +43,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](/public/images/product_image.png)
+[![Product Name Screen Shot][product-screenshot]](/assets/images/product_image.png)
 
 This repository houses the Sanity CMS setup for the Chest Opening Experience, providing a structured content backend that powers the dynamic and interactive elements of the game. It allows for seamless content updates, management of chest items, and configuration of rewards, ensuring a fresh and engaging experience for users.
 
@@ -156,7 +156,7 @@ Project Link: [https://github.com/vinnyhoward/loot-chest](https://github.com/vin
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vinnyhoward/
-[product-screenshot]: public/images/product_image.png
+[product-screenshot]: assets/images/product_image.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
